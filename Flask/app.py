@@ -21,7 +21,7 @@ def upload():
         f.save(filepath)
         
         print("[INFO] Loading the model...")
-        model = pickle.loads(open('parkinson.pkl',"rb").read())
+        model = pickle.loads(open('parkPredict.pkl',"rb").read())
         image = cv2.imread(filepath)
         output = image.copy()
         
